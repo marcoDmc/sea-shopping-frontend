@@ -519,11 +519,11 @@
         {
             "id": "b3cfdffd-e305-593f-8995-bdd0d1f2ee5f",
             "type": "item",
-            "name": "Sacos de lixo",
+            "name": "batata",
             "checked": false,
-            "price": 1.99,
+            "price": 3.99,
             "tags": [
-                "cleaning"
+                "junk"
             ]
         },
         {
