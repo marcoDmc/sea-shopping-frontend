@@ -1,13 +1,19 @@
-import React from 'react'
-import { Wrapper } from './AppHeader.styled'
+import React from "react";
+import { RiSunFoggyFill } from "react-icons/ri";
+import { RiMoonFoggyFill } from "react-icons/ri";
+import { Wrapper } from "./AppHeader.styled";
 
-function AppHeader () {
-  return <Wrapper>
-    alga
-    <span>
-      Shopping
-    </span>
-  </Wrapper>
+function AppHeader({ handleTheme, themes }) {
+  return (
+    <Wrapper themes={themes}>
+      alga
+      <span>Shopping</span>
+      <div className="themes">
+        <RiSunFoggyFill className="sun" onClick={handleTheme} />
+        <RiMoonFoggyFill className="moon" onClick={handleTheme} />
+      </div>
+    </Wrapper>
+  );
 }
 
-export default AppHeader
+export default AppHeader;

@@ -1,12 +1,14 @@
-import React from 'react'
-import { Wrapper } from './AppContainer.styled'
+import React from "react";
+import { Wrapper } from "./AppContainer.styled";
 
-function AppContainer ({ left, middle, right }) {
-  return <Wrapper>
-    <div>{ left }</div>
-    <div>{ middle }</div>
-    <div>{ right }</div>
-  </Wrapper>
+function AppContainer({ left, middle, right}) {
+  return (
+    <Wrapper>
+      <div>{left}</div>
+      <div>{middle}</div>
+      <div>{right}</div>
+    </Wrapper>
+  );
 }
 
-export default AppContainer
+export default AppContainer;

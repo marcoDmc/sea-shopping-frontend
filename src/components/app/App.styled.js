@@ -1,31 +1,19 @@
 import styled from "styled-components";
-import bg from "../../assets/bg.svg";
-
-// export const Wrapper = styled.div`
-//   height: 100vh;
-//   background-image: url(${bg});
-//   background-color: #F8F5EC;
-//   background-size: cover;
-//   background-position: center center;
-//   object-fit: cover;
-// `;
-
 
 export const Wrapper = styled.div`
   height: 100vh;
-  background-color: #F8F5EC;
-  background-image: url(${bg});
   background-size: cover;
   background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;
 
 export const Container = styled.div`
   width: 734px;
   height: 574px;
-  background-color: #FFFFFF;
-  box-shadow: 0 3px 10px rgba(0,0,0,.15);
+  background: ${(props) => (props.themes ? "#FFFF" : "#2F3240")};
+  box-shadow: 0 3px 10px #030207;
   border-radius: 20px;
-`
+  color: ${(props) => (props.themes ? "#1F1A26" : "#F2F2F2")};
+`;
