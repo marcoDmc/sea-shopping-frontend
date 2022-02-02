@@ -7,7 +7,7 @@ const routes = require("./routes/routes");
 const db = require("./data/db");
 
 
+app.use(express.json())
 app.use(cors());
 app.use(routes);
-app.use(express.json())
 app.listen(port, () => console.info(`server on in port ${port}`));

@@ -1,7 +1,6 @@
 const mongo = require("mongoose");
 
 const shoppingSchema = new mongo.Schema({
-  _id: String,
   type: String,
   name: String,
   checked: Boolean,
