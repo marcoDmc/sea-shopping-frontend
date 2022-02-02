@@ -9,4 +9,4 @@
 ##
 ![dark](./src/assets/dark_alga.png)
 
-[link](https://alga-shopping.vercel.app/)
+[application link](https://alga-shopping.vercel.app/)
