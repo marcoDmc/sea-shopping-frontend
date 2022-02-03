@@ -9,4 +9,10 @@
 ##
 ![dark](./src/assets/dark_alga.png)
 
+> form for creating new products
+
+![light](./src/assets/form_light.png)
+##
+![dark](./src/assets/form_dark.png)
+
 [application link](https://alga-shopping.vercel.app/)
