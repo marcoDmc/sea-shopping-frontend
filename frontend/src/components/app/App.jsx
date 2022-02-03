@@ -179,6 +179,7 @@ function App() {
         price={price}
         name={name}
         setStatusRadio={setStatusRadio}
+        themes={theme}
       />
     </>
   );

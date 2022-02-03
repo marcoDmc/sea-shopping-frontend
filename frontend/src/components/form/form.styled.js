@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.form`
-  background: #030207;
+  background: ${(props) => (props.themes ? "#fff" : "#030207")};
   width: 250px;
   height: 400px;
   padding: 5px;
@@ -11,13 +11,12 @@ const Wrapper = styled.form`
   align-items: center;
   border-radius: 10px;
   position: fixed;
-  left: 100px;
   top: 50px;
-  /* background: #2F3240; */
+  left: 100px;
   box-shadow: 0 3px 10px #030207;
 
   h1 {
-    color: #fff;
+    color: ${(props) => (props.themes ? "#2a2a2a" : "#fff")};
     font-size: 1.4rem;
   }
 
@@ -27,10 +26,10 @@ const Wrapper = styled.form`
     font-size: 1rem;
     outline: none;
     border: none;
-    border-bottom: 2px solid #8f61f2;
-    /* background: #2F3240; */
-    color: #fff;
-    background: #030207;
+    border-bottom: 2px solid
+      ${(props) => (props.themes ? "#364159" : "#4a35bb")};
+    color: ${(props) => (props.themes ? "#030207" : "#fff")};
+    background: ${(props) => (props.themes ? "#fff" : "#030207")};
   }
   .radios {
     width: 100%;
@@ -48,7 +47,7 @@ const Wrapper = styled.form`
 
       label {
         font-size: 0.9rem;
-        color: #ffff;
+        color: ${(props) => (props.themes ? "#030207" : "#ffff")};
       }
     }
   }
@@ -57,10 +56,13 @@ const Wrapper = styled.form`
     width: 90%;
     padding: 5px;
     text-transform: uppercase;
-    background: #4a35bb;
+    background: ${(props) => (props.themes ? "#364159" : "#4a35bb")};
     border: 1px solid #271b5b;
     outline: none;
     border-radius: 10px;
+    color: ${(props) => (props.themes ? "#F2B441" : "#f2ebc9")};
+    font-weight: bold;
+    font-family: sans-serif;
 
     :hover {
       opacity: 0.7;

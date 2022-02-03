@@ -10,6 +10,7 @@ const Form = ({
   price,
   name,
   setStatusRadio,
+  themes,
 }) => {
   const [selectedValue, setSelectedValue] = React.useState("healthy");
 
@@ -24,7 +25,12 @@ const Form = ({
     value: item,
   });
   return (
-    <C.Wrapper onSubmit={handleSubmitForm} price={price} name={name}>
+    <C.Wrapper
+      onSubmit={handleSubmitForm}
+      price={price}
+      name={name}
+      themes={themes}
+    >
       <C.Title>create item</C.Title>
       <C.Label htmlFor="name"></C.Label>
 
