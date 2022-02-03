@@ -1,5 +1,5 @@
 const shoppingSchema = require("../schemas/shopping");
-const { v4: uuid } = require("uuid");
+
 const controls = {
   async index(request, response) {
     try {

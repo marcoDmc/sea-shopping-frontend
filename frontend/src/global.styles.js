@@ -1,6 +1,5 @@
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import bg from "./assets/bg.svg";
-
 
 export const Global = createGlobalStyle`
 *{
@@ -16,8 +15,8 @@ body{
     background-size:cover;
     background-image: url(${bg});  
    
-   
+  
 }
 
 
-`
+`;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.header`
   height: 70px;
   background-color: #364159;
-  color: ${(props) => (props.themes ? "#F2B441" : "#f2ebc9")}; 
+  color: ${(props) => (props.themes ? "#F2B441" : "#f2ebc9")};
   font-size: 24px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -30,7 +30,7 @@ export const Wrapper = styled.header`
       color: #f29f05;
       cursor: pointer;
       display: ${(props) => (props.themes ? "flex" : "none")};
-        animation: .5s linear .5s both sliding;
+      animation: 0.5s linear 0.5s both sliding;
       :hover {
         opacity: 0.8;
         transition: 0.4s ease;
@@ -42,7 +42,7 @@ export const Wrapper = styled.header`
       display: ${(props) => (props.themes ? "none" : "flex")};
 
       cursor: pointer;
-      animation: .5s linear .5s both sliding;
+      animation: 0.5s linear 0.5s both sliding;
       :hover {
         opacity: 0.8;
         transition: 0.4s ease;
