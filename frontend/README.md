@@ -11,8 +11,17 @@
 
 > form for creating new products
 
-![light](./src/assets/form_light.png)
+![](./src/assets/form_light.png)
 ##
-![dark](./src/assets/form_dark.png)
+![](./src/assets/form_dark.png)
+
+
+
+
+
+
+
+
+
 
 [application link](https://alga-shopping.vercel.app/)
