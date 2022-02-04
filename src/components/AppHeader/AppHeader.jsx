@@ -6,7 +6,7 @@ import { Wrapper } from "./AppHeader.styled";
 function AppHeader({ handleTheme, themes }) {
   return (
     <Wrapper themes={themes}>
-      alga
+      sea 
       <span>Shopping</span>
       <div className="themes">
         <RiSunFoggyFill className="sun" onClick={handleTheme} />
