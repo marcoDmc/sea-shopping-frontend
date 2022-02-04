@@ -5,15 +5,10 @@
 
 > application also has dark and light theme
 
-![light](./src/assets/light_alga.png)
+![light](./src/assets/light_theme.png)
 ##
-![dark](./src/assets/dark_alga.png)
-
-> form for creating new products
-
-![](./src/assets/form_light.png)
 ##
-![](./src/assets/form_dark.png)
+![dark](./src/assets/dark_theme.png)
 
 
 
@@ -24,4 +19,3 @@
 
 
 
-[application link](https://alga-shopping.vercel.app/)
