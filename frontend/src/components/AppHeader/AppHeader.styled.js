@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const Wrapper = styled.header`
   height: 70px;
-  background-color: #364159;
-  color: ${(props) => (props.themes ? "#F2B441" : "#f2ebc9")};
+  background: ${(props) =>
+    props.themes
+      ? "#F2F2F2"
+      : "linear-gradient(to left,  rgb(111, 9, 144), rgb(200, 47, 142), rgb(229, 77, 80))"};
+  color: ${(props) => (props.themes ? "#E52B64" : "#F2F2F2")};
   font-size: 24px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -27,7 +30,7 @@ export const Wrapper = styled.header`
     position: relative;
 
     .sun {
-      color: #f29f05;
+      color: #e52b64;
       cursor: pointer;
       display: ${(props) => (props.themes ? "flex" : "none")};
       animation: 0.5s linear 0.5s both sliding;
@@ -38,7 +41,7 @@ export const Wrapper = styled.header`
     }
 
     .moon {
-      color: #6b57dc;
+      color:#0C0C0F;
       display: ${(props) => (props.themes ? "none" : "flex")};
 
       cursor: pointer;

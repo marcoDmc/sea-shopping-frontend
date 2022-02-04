@@ -7,13 +7,13 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left:200px;
+  margin-left: 200px;
 `;
 
 export const Container = styled.div`
   width: 734px;
   height: 574px;
-  background: ${(props) => (props.themes ? "#FFFF" : "#2F3240")};
+  background: ${(props) => (props.themes ? "#FFFF" : "#0C0C0F")};
   box-shadow: 0 3px 10px #030207;
   border-radius: 20px;
   color: ${(props) => (props.themes ? "#1F1A26" : "#F2F2F2")};

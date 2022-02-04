@@ -83,7 +83,7 @@ function App() {
             left={
               <ShoppingList
                 themes={theme}
-                title="Produtos disponíveis"
+                title="Products available"
                 products={products}
                 onToggle={handleToggle}
               />
@@ -91,18 +91,18 @@ function App() {
             middle={
               <ShoppingList
                 themes={theme}
-                title="Sua lista de compras"
+                title="your shopping list"
                 products={selectedProducts}
                 onToggle={handleToggle}
               />
             }
             right={
               <div style={{ fontWeight: "bold" }}>
-                estatisticas
+                <p>statistics</p>
                 <LineChart
                   themes={theme}
                   color={colors[0]}
-                  title="saudavel"
+                  title="healthy"
                   percentage={extractPercentage(
                     selectedProducts.length,
                     selectedProducts.filter((product) =>
@@ -113,7 +113,7 @@ function App() {
                 <LineChart
                   themes={theme}
                   color={colors[1]}
-                  title="nao tao saudavel"
+                  title="not so healthy"
                   percentage={extractPercentage(
                     selectedProducts.length,
                     selectedProducts.filter((product) =>
@@ -124,7 +124,7 @@ function App() {
                 <LineChart
                   themes={theme}
                   color={colors[2]}
-                  title="limpeza"
+                  title="cleaning"
                   percentage={extractPercentage(
                     selectedProducts.length,
                     selectedProducts.filter((product) =>
@@ -135,7 +135,7 @@ function App() {
                 <LineChart
                   themes={theme}
                   color={colors[3]}
-                  title="outros"
+                  title="others"
                   percentage={extractPercentage(
                     selectedProducts.length,
                     selectedProducts.filter((product) =>
@@ -143,20 +143,20 @@ function App() {
                     ).length
                   )}
                 />
-                <div style={{ marginTop: 12 }}>
+                <div style={{ marginTop: "12px" }}>
                   <h2
                     style={{
                       fontWeight: 400,
                       fontSize: 12,
-                      color: theme ? "#D93232" : "#FFFF",
+                      color: theme ? "#04D94F" : "#8F61F2",
                     }}
                   >
-                    previsão de gastos:
+                    expense forecast:
                   </h2>
                   <div
                     style={{
                       fontSize: 24,
-                      color: theme ? "#2F3240" : "#F2EC99",
+                      color: theme ? "#1DA1F2" : "#F2EC99",
                     }}
                   >
                     {totalPrice.toLocaleString("pt-br", {

@@ -7,6 +7,8 @@ export const Global = createGlobalStyle`
     margin:0px;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+
+  
 }
 
 body{

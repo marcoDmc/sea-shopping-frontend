@@ -7,8 +7,8 @@ export const Wrapper = styled.div`
 
   span {
     font-size: 1rem;
-    color: ${(props) => (props.themes ? "#0FBFBF" : "#1DA1F2")};
     margin-bottom: 4px;
+    color: ${(props) => (props.themes ? "#0C0C0C" : "#F2F2F2")};
   }
 `;
 

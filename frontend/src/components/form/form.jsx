@@ -83,7 +83,7 @@ const Form = ({
         <span>
           <label>cleanning</label>
           <Radio
-            {...controlProps("cleanning")}
+            {...controlProps("cleaning")}
             sx={{
               color: purple[800],
               "&.Mui-checked": {
