@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.form`
-  background: ${(props) => (props.themes ? "#fff" : "#030207")};
+  background: ${(props) => (props.themes ? "#fff" : "#0C0C0F")};
   width: 250px;
   height: 400px;
   padding: 5px;
@@ -9,14 +9,14 @@ const Wrapper = styled.form`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 20px;
   position: fixed;
   top: 50px;
   left: 100px;
   box-shadow: 0 3px 10px #030207;
 
   h1 {
-    color: ${(props) => (props.themes ? "#2a2a2a" : "#fff")};
+    color: ${(props) => (props.themes ? "#030207" : "#F2F2F2")};
     font-size: 1.4rem;
   }
 
@@ -25,9 +25,16 @@ const Wrapper = styled.form`
     width: 90%;
     font-size: 1rem;
     outline: none;
-    border: none;
-    border-bottom: 2px solid
-      ${(props) => (props.themes ? "#364159" : "#4a35bb")};
+    border: 2px solid #f2f2f2;
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(
+        45deg,
+        rgb(111, 9, 144),
+        rgb(200, 47, 142),
+        rgb(229, 77, 80)
+      )
+      1;
     color: ${(props) => (props.themes ? "#030207" : "#fff")};
     background: ${(props) => (props.themes ? "#fff" : "#030207")};
   }
@@ -56,13 +63,17 @@ const Wrapper = styled.form`
     width: 90%;
     padding: 5px;
     text-transform: uppercase;
-    background: ${(props) => (props.themes ? "#364159" : "#4a35bb")};
+    background: linear-gradient(
+      to right,
+      rgb(111, 9, 144),
+      rgb(200, 47, 142),
+      rgb(229, 77, 80)
+    );
     border: 1px solid #271b5b;
     outline: none;
-    border-radius: 10px;
-    color: ${(props) => (props.themes ? "#F2B441" : "#f2ebc9")};
-    font-weight: bold;
-    font-family: sans-serif;
+    border-radius: 5px;
+    color: #f2f2f2;
+    font: bold 1rem sans-serif;
 
     :hover {
       opacity: 0.7;
