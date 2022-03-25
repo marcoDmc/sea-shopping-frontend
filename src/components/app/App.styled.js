@@ -2,16 +2,17 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   height: 100vh;
-  background-size: cover;
-  background-position: center center;
   display: flex;
-  justify-content: center;
+  flex-direction: column-reverse;
   align-items: center;
-  margin-left: 200px;
+  justify-content: center;
+  gap: 2rem;
+  margin: 10px;
 `;
 
 export const Container = styled.div`
-  width: 734px;
+  width: 100%;
+  max-width: 1000px;
   height: 574px;
   background: ${(props) => (props.themes ? "#FFFF" : "#0C0C0F")};
   box-shadow: 0 3px 10px #030207;

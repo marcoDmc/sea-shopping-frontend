@@ -4,7 +4,7 @@ import LineChart from "../../shared/LineChart";
 import AppContainer from "../AppContainer/AppContainer";
 import AppHeader from "../AppHeader";
 import ShoppingList from "../ShoppingList";
-import Form from "../form/form.jsx";
+import Header from "../navbar/navbar";
 import { Wrapper, Container } from "./App.styled";
 import extractPercentage from "../../utils/extractPorcentage";
 
@@ -20,6 +20,8 @@ function App() {
 
   const handleSubmitForm = async (event) => {
     event.preventDefault();
+
+
 
     try {
       if (name && price) {
@@ -170,17 +172,17 @@ function App() {
             }
           />
         </Container>
-      </Wrapper>
 
-      <Form
-        handleSubmitForm={handleSubmitForm}
-        setName={setName}
-        setPrice={setPrice}
-        price={price}
-        name={name}
-        setStatusRadio={setStatusRadio}
-        themes={theme}
-      />
+        <Header
+          handleSubmitForm={handleSubmitForm}
+          setName={setName}
+          setPrice={setPrice}
+          price={price}
+          name={name}
+          setStatusRadio={setStatusRadio}
+          themes={theme}
+        />
+      </Wrapper>
     </>
   );
 }
