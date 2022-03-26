@@ -17,6 +17,12 @@ export const Header = styled.header`
     font-size: 1.5rem;
     font-weight: normal;
     color: ${(props) => (props.themes ? "#030207" : "#F2F2F2")};
+    text-align: center;
+    text-transform: capitalize;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 
   @media (max-width: 856px) {
@@ -78,7 +84,7 @@ export const Input = styled.input`
       rgb(229, 77, 80)
     )
     1;
-  color: ${(props) => (props.themes ? "#030207" : "#fff")};
+  color: grey;
   background: transparent;
 
   ::placeholder {

@@ -8,6 +8,13 @@ export const Wrapper = styled.div`
   justify-content: center;
   gap: 2rem;
   margin: 10px;
+  
+
+  
+  @media (max-width: 675px) {
+    height: auto;
+    
+  }
 `;
 
 export const Container = styled.div`
@@ -18,4 +25,11 @@ export const Container = styled.div`
   box-shadow: 0 3px 10px #030207;
   border-radius: 20px;
   color: ${(props) => (props.themes ? "#1F1A26" : "#F2F2F2")};
+
+
+  @media (max-width: 675px) {
+    height: auto;
+    
+  }
+ 
 `;
