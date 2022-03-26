@@ -25,7 +25,7 @@
 ![](./src/assets/env.png)
 #
 ⚡⚡⚡⚡
-> http://localhost:5500
+>   add the __same port on which the server on the backend__ is running example: http://localhost:5500
 
 ⚡⚡⚡⚡
 
